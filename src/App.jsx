@@ -1,10 +1,10 @@
 import React from "react";
 import PageLayout from "./components/layout/index";
-import styles from "./app.scss";
+import "./app.scss";
 
 const App = () => {
   return (
-    <div className={styles.app}>
+    <div className="app">
       <PageLayout />
     </div>
   );
