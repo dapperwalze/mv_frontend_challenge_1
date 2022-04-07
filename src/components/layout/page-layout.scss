@@ -1,0 +1,14 @@
+.pageLayout {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  background-color: rgba(237, 242, 254, 1);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .pageLayout {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

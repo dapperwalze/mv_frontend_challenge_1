@@ -1,0 +1,145 @@
+$bg-color: rgba(237, 242, 254, 1);
+$color: rgba(0, 0, 0, 1);
+$primary-font-family: "Work Sans", sans-serif;
+$secondary-font-family: "Lobster", sans-serif;
+$primary-font-Size: 1rem;
+$font-weight: 500;
+$line-height: 1.25rem;
+
+.aside {
+  min-height: 100vh;
+  background-color: $bg-color;
+  color: $color;
+  font-family: $primary-font-family;
+  line-height: $line-height;
+  padding: 0 1.875rem 6.25rem 1.875rem;
+  position: relative;
+}
+.logoContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 2.5rem 0;
+}
+.logo {
+  font-family: $primary-font-family;
+  font-size: 2.5rem;
+  font-weight: $font-weight;
+
+  a {
+    text-decoration: none;
+    color: $color;
+  }
+}
+.logoLink {
+  display: flex;
+  gap: 5px;
+}
+.sideNavBar {
+  padding-top: 1.875rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.navLink {
+  width: 100%;
+  text-decoration: none;
+  color: rgba(52, 61, 72, 1);
+  font-size: 1.0625rem;
+  font-weight: 400;
+  cursor: pointer;
+  &:hover {
+    margin-left: 5px;
+    transition: ease 0.5s;
+  }
+}
+.listItem {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 20px;
+  border-radius: 10px;
+}
+.logoutIcon {
+  width: 100%;
+  text-decoration: none;
+  color: rgba(52, 61, 72, 1);
+  font-size: 1.0625rem;
+  font-weight: 400;
+  cursor: pointer;
+  position: absolute;
+  bottom: 5%;
+  left: 20px;
+  &:hover {
+    margin-left: 5px;
+    transition: ease 0.5s;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+  .aside {
+    min-height: 100vh;
+    background-color: $bg-color;
+    color: $color;
+    font-family: $primary-font-family;
+    line-height: $line-height;
+    padding: 0 1.875rem 6.25rem 1.875rem;
+  }
+
+  .sideNavBar {
+    padding-top: 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .listItemLabel {
+    display: block;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .aside {
+    width: 100%;
+    min-height: 5vh;
+    padding: 0 1.875rem 1.5rem 1.875rem;
+    display: flex;
+    justify-content: center;
+  }
+  .sideNavBar {
+    display: none;
+  }
+
+  .logoContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem 0 0px 0;
+  }
+  .navLink {
+    width: 50px;
+    text-decoration: none;
+    color: rgba(52, 61, 72, 1);
+    font-size: 1.0625rem;
+    font-weight: 400;
+    &:hover {
+      margin-left: 0px;
+      transition: ease 0.5s;
+    }
+  }
+  .listItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 0px;
+    border-radius: 10px;
+  }
+  .listItemLabel {
+    display: none;
+  }
+  .logoutIcon {
+    display: none;
+  }
+}

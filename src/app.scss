@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: rgba(237, 242, 254, 1);
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+}
+.ant-notification {
+  z-index: 1060 !important;
+  margin: 0 15px 0 0 !important;
+}
+.card {
+  border-radius: 1rem !important;
+}
+.mt-6 {
+  margin-top: 6rem !important;
+}
+:is(.btn, .modal-dialog) {
+  font-family: "Work Sans", sans-serif !important;
+}
